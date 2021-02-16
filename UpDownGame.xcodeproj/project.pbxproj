@@ -13,6 +13,7 @@
 		CB46F77D25DB335B006CA91E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB46F77B25DB335B006CA91E /* Main.storyboard */; };
 		CB46F77F25DB335B006CA91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB46F77E25DB335B006CA91E /* Assets.xcassets */; };
 		CB46F78225DB335B006CA91E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB46F78025DB335B006CA91E /* LaunchScreen.storyboard */; };
+		CB46F79225DBA611006CA91E /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46F79125DBA611006CA91E /* CreditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		CB46F77E25DB335B006CA91E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB46F78125DB335B006CA91E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB46F78325DB335B006CA91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB46F78A25DB33BC006CA91E /* UpDownGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UpDownGame.entitlements; sourceTree = "<group>"; };
+		CB46F79125DBA611006CA91E /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +59,11 @@
 		CB46F77425DB335B006CA91E /* UpDownGame */ = {
 			isa = PBXGroup;
 			children = (
+				CB46F78A25DB33BC006CA91E /* UpDownGame.entitlements */,
 				CB46F77525DB335B006CA91E /* AppDelegate.swift */,
 				CB46F77725DB335B006CA91E /* SceneDelegate.swift */,
 				CB46F77925DB335B006CA91E /* ViewController.swift */,
+				CB46F79125DBA611006CA91E /* CreditViewController.swift */,
 				CB46F77B25DB335B006CA91E /* Main.storyboard */,
 				CB46F77E25DB335B006CA91E /* Assets.xcassets */,
 				CB46F78025DB335B006CA91E /* LaunchScreen.storyboard */,
@@ -140,6 +145,7 @@
 				CB46F77A25DB335B006CA91E /* ViewController.swift in Sources */,
 				CB46F77625DB335B006CA91E /* AppDelegate.swift in Sources */,
 				CB46F77825DB335B006CA91E /* SceneDelegate.swift in Sources */,
+				CB46F79225DBA611006CA91E /* CreditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,14 +292,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UpDownGame/UpDownGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8V3V4ZHCZ;
 				INFOPLIST_FILE = UpDownGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shinyjade.UpDownGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,14 +314,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UpDownGame/UpDownGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8V3V4ZHCZ;
 				INFOPLIST_FILE = UpDownGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shinyjade.UpDownGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
